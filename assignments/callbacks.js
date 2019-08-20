@@ -38,10 +38,13 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   console.log(test2); // "this Pencil is worth a million dollars!"
 */
 
-
 function getLength(arr, cb) {
-  // getLength passes the length of the array into the callback.
+  return cb(arr);
 }
+let arrayLength = (arr) => {
+  return items.length;
+}
+console.log(getLength(items, arrayLength));
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.

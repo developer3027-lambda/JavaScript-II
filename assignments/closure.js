@@ -3,8 +3,20 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+function car_title(car_name){
+  console.log(car_name);
 
-
+  function car_make(c_make){
+    console.log(c_make);
+    
+    function seats(no_seats){
+      console.log(no_seats);
+    }
+    seats(3);
+  }
+  car_make('Roberton');
+}
+car_title('The Wreck');
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
